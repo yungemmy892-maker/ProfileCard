@@ -115,7 +115,7 @@ status-done, status-overdue - Status-based styling
 
 expanded - Collapsible section state
 
-🎨 Styling
+###🎨 Styling
 CSS Variables
 Customize the appearance by modifying these CSS variables:
 
@@ -166,14 +166,14 @@ javascript
   dueDate: Date object,
   tags: ['work', 'urgent', 'design', 'mobile']
 }
-🌐 Browser Support
+###🌐 Browser Support
 Browser	Version	Support
 Chrome	90+	✅ Full
 Firefox	88+	✅ Full
 Safari	14+	✅ Full
 Edge	90+	✅ Full
 Opera	76+	✅ Full
-♿ Accessibility
+###♿ Accessibility
 This application follows WCAG 2.1 guidelines:
 
 Semantic HTML - Proper use of article, ul, time elements
@@ -226,7 +226,7 @@ Desktop	> 768px	Full spacing, multi-column forms
 🐛 Known Issues
 None reported
 
-🤝 Contributing
+###🤝 Contributing
 Fork the repository
 
 Create a feature branch (git checkout -b feature/AmazingFeature)
@@ -246,46 +246,15 @@ Follow CSS naming conventions
 
 Test across multiple browsers
 
-📄 License
+###📄 License
 This project is licensed under the MIT License - see below:
 
-text
-MIT License
-
-Copyright (c) 2024
+Copyright (c) 2026
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files, to deal in the Software
 without restriction, including without limitation the rights to use, copy,
 modify, merge, publish, distribute, sublicense, and/or sell copies of the
 Software, and to permit persons to whom the Software is furnished to do so.
-🙏 Acknowledgments
-Fonts: DM Serif Display and DM Sans
-
-Icons: Custom SVG icons
-
-Inspiration: Modern task management applications
-
-📞 Support
-For issues or questions:
-
-Check the documentation
-
-Open an issue on GitHub
-
-Contact the maintainer
-
-🔄 Version History
-v1.0.0 (Current)
-
-Initial release
-
-Full CRUD operations
-
-Dark/light mode support
-
-Responsive design
-
-Accessibility features
 
 Made by CodeWithNuel
