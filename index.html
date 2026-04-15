@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Profile Card — Stage 1b</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="page">
+
+  <article data-testid="test-profile-card">
+
+    <!-- Hero -->
+    <div class="hero">
+      <figure>
+        <div class="avatar-upload-wrap">
+          <img
+            data-testid="test-user-avatar"
+            id="user-avatar"
+            src="image/profile.jpg"
+            alt="Emmanuel okon — frontend developer"
+            width="88"
+            height="88"
+            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2288%22 height=%2288%22 viewBox=%220 0 88 88%22%3E%3Crect width=%2288%22 height=%2288%22 rx=%2244%22 fill=%22%232a2822%22/%3E%3Ctext x=%2244%22 y=%2252%22 text-anchor=%22middle%22 font-size=%2228%22 font-family=%22Syne,sans-serif%22 font-weight=%22800%22 fill=%22%23e8c84a%22%3EJR%3C/text%3E%3C/svg%3E'"
+          />
+          <input type="file" id="avatar-file-input" accept="image/*" aria-label="Upload avatar image" />
+          <button class="avatar-upload-btn" onclick="document.getElementById('avatar-file-input').click()" aria-label="Change avatar photo">Change photo</button>
+        </div>
+        <figcaption>Web<br/>Developer</figcaption>
+      </figure>
+
+      <div class="hero-text">
+        <header>
+          <h2 data-testid="test-user-name">Emmanuel Okon</h2>
+          <p class="role-line">Frontend Dev · he/him</p>
+        </header>
+        <p data-testid="test-user-bio">
+          Crafting interfaces that sit at the intersection of rigorous systems thinking and tactile delight. I believe good design is invisible until it isn't.
+        </p>
+      </div>
+    </div>
+    <!-- Live time -->
+    <div class="time-bar" aria-label="Current timestamp">
+      <div class="time-dot" aria-hidden="true"></div>
+      <span>epoch ms</span>
+      <span data-testid="test-user-time" id="epoch-time" aria-live="polite" aria-atomic="true" aria-label="Current time in milliseconds">—</span>
+    </div>
+
+    <!-- Social links -->
+    <nav data-testid="test-user-social-links" aria-label="Social media links">
+      <h3 class="social-nav-header">Find me on</h3>
+      <ul class="social-list" role="list">
+        <li>
+          <a data-testid="test-user-social-twitter"
+             href="https://x.com/ctrl_guy?s=21"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="CodeWithNuel on X / Twitter (opens in new tab)">
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M12.6 1.5h2.3L9.8 7l5.9 7.5H11l-3.8-4.9-4.3 4.9H.5l5.4-6.2L.2 1.5H5l3.4 4.5 4.2-4.5zm-.8 12.4h1.3L4.3 2.8H2.9l9 11.1z" fill="currentColor"/>
+            </svg>
+            X / Twitter
+          </a>
+        </li>
+        <li>
+          <a data-testid="test-user-social-github"
+             href="https://github.com/yungemmy892-maker"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Jordan Rivera on GitHub (opens in new tab)">
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M8 1a7 7 0 00-2.21 13.64c.35.06.48-.15.48-.34v-1.2c-1.95.42-2.36-.94-2.36-.94-.32-.81-.78-1.02-.78-1.02-.64-.44.05-.43.05-.43.7.05 1.07.72 1.07.72.62 1.07 1.63.76 2.03.58.06-.45.24-.76.44-.93-1.56-.18-3.2-.78-3.2-3.47 0-.77.27-1.39.72-1.88-.07-.18-.31-.89.07-1.85 0 0 .59-.19 1.93.72A6.73 6.73 0 018 5.79c.6 0 1.2.08 1.76.23 1.34-.91 1.93-.72 1.93-.72.38.96.14 1.67.07 1.85.45.49.72 1.11.72 1.88 0 2.7-1.64 3.29-3.21 3.47.25.22.48.65.48 1.3v1.93c0 .19.12.41.48.34A7 7 0 008 1z" fill="currentColor"/>
+            </svg>
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a data-testid="test-user-social-linkedin"
+             href="https://linkedin.com/"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Jordan Rivera on LinkedIn (opens in new tab)">
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M13.5 1.5h-11A1 1 0 001.5 2.5v11a1 1 0 001 1h11a1 1 0 001-1v-11a1 1 0 00-1-1zM5.5 12.5h-2v-6h2v6zM4.5 5.6a1.1 1.1 0 110-2.2 1.1 1.1 0 010 2.2zM12.5 12.5h-2V9.3c0-.75-.27-1.26-.95-1.26-.52 0-.83.35-.97.69-.05.12-.06.29-.06.46v3.28h-2s.03-5.32 0-6h2v.85a2 2 0 011.82-1c1.33 0 2.32.87 2.32 2.73v3.42z" fill="currentColor"/>
+            </svg>
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Hobbies + Dislikes -->
+    <div class="body-grid">
+      <section class="body-section" aria-labelledby="hobbies-label">
+        <h3 class="section-label" id="hobbies-label">Hobbies</h3>
+        <ul data-testid="test-user-hobbies" role="list">
+          <li>Turning ideas into real products</li>
+          <li>Breaking down how apps actually work</li>
+          <li>Optimizing websites for speed and performance</li>
+          <li>Sharing insights on tech and growth</li>
+        </ul>
+      </section>
+
+      <section class="body-section" aria-labelledby="dislikes-label">
+        <h3 class="section-label" id="dislikes-label">Dislikes</h3>
+        <ul data-testid="test-user-dislikes" role="list">
+          <li>Overengineered solutions to simple problems</li>
+          <li>“Let’s circle back” with no action</li>
+          <li>Bad UI pretending to be minimalism</li>
+          <li>Apps that waste users’ time</li>
+    
+        </ul>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="card-foot">
+      <span>Emmanuel okon — Profile Card</span>
+      <span>Stage <span>1b</span></span>
+    </footer>
+
+  </article>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
